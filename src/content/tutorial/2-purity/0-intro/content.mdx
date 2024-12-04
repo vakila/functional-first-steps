@@ -1,0 +1,33 @@
+---
+type: lesson
+title: Pure functions
+editor: false
+previews: false
+terminal:
+  open: false
+  panels: []
+---
+
+
+import SlidesLink from "@components/SlidesLink.astro"
+import Image from "@components/Image.astro"
+
+## FP in a nutshell: Pure functions <SlidesLink url="https://observablehq.com/embed/@anjana/what-is-functional-programming?cell=*" />
+
+<Image name="pureFunction" width="50%" />
+
+
+
+
+
+:::info
+
+A pure function has two identifying characteristics:
+- It has _no side effects_: It has no effect on the program or the world besides outputting its return value (e.g. printing to the console, making a network request, writing to a file, etc.)
+- It is _deterministic_: Given the same input values, it will always return the same output. This means its return value must depend only on its input parameters, and not on any other data external to the function (e.g. global program state, data read from a file or network, etc.)
+
+:::
+
+
+
+

@@ -1,0 +1,31 @@
+---
+type: lesson
+title: Functional Pipelines
+focus: /src/funpro.js
+previews: false
+mainCommand: ['npm run test ./src/pipe.test.js', 'Running tests']
+---
+
+
+import Image from "@components/Image.astro";
+
+### Functional Pipelines
+
+
+:::info
+
+In functional programming we construct programs entirely out of modular pure functions, using function composition to "combine" several functions' effects to create a pipeline through which our program's data can flow.
+
+:::
+
+
+Complete the `pipe` function in `funpro.js`. This function takes as arguments any number of single-argument functions, and should return a single function representing their composition, i.e. a function that passes the input value through a "pipeline" of the functions.
+
+:::tip
+
+Hints:
+- We've said it before, we'll say it again: recursion is a functional programmer's best friend!
+- The `length`, `head`, and `tail` functions we saw earlier may come in handy!
+- You can use JavaScript's spread syntax (...) to expand an array as arguments to a function when you don't know how many arguments there will be (e.g. doSomething(...howeverManyArguments))
+
+:::

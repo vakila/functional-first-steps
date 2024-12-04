@@ -1,0 +1,60 @@
+---
+import FEMLogo from "/fem-logo.svg?url";
+import FEMLogoDark from "/fem-logo-dark.svg?url";
+---
+
+<nav
+  class="bg-tk-elements-topBar-backgroundColor text-white transition-theme border-b border-tk-elements-app-borderColor flex max-w-full space-between items-center p-3 px-4 min-h-[56px]"
+>
+  <div
+    class="flex flex-1 gap-2 items-center lh-6"
+    style="color: var(--tk-text-primary);"
+  >
+    <slot name="logo" />
+    <a href="/">
+      <h1 class="text-lg lh-6">Functional JS First Steps</h1>
+    </a>
+  </div>
+
+  <div class="flex w-fit items-center ml-2 gap-2 max-h-[2em]">
+    <a
+      href="https://frontendmasters.com/courses/functional-first-steps/"
+      style="color: currentColor;"
+      target="_blank"
+      title="Watch the full course on FrontendMasters"
+    >
+      <img class="h-5 block dark:hidden" src={FEMLogo} alt="FrontendMasters" />
+      <img
+        class="h-5 hidden dark:block"
+        src={FEMLogoDark}
+        alt="FrontendMasters"
+      />
+    </a>
+    <div
+      class="flex items-center nowrap text-sm text-[var(--tk-elements-topBar-iconButton-iconColor)]"
+    >
+      <a
+        role="button"
+        href="https://tutorialkit.dev"
+        target="_blank"
+        title="Built with TutorialKit"
+        class="flex items-center font-size-3.5 text-tk-elements-topBar-iconButton-iconColor hover:text-tk-elements-topBar-iconButton-iconColorHover transition-theme bg-tk-elements-topBar-iconButton-backgroundColor hover:bg-tk-elements-topBar-iconButton-backgroundColorHover p-1 rounded-md"
+      >
+        <svg
+          viewBox="0 0 16 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          height="24"
+          width="24"
+        >
+          <path
+            d="M0 4.6V8.4L5.6 5.6V7.3L9.4 5.5V0L0 4.6ZM5.6 9.5L16 4.5V8.3L5.6 13.4V9.5ZM13.7 11.6L8.5 14.1L16 16V12.2L13.7 11.6Z"
+            fill="currentcolor"></path>
+        </svg>
+      </a>
+    </div>
+    <slot name="open-in-stackblitz-link" />
+    <slot name="theme-switch" />
+  </div>
+</nav>

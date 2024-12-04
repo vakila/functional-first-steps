@@ -1,0 +1,22 @@
+---
+const { name, width } = Astro.props;
+import pureFunction from "@images/function.svg?url";
+import impureShell from "@images/impureShell.svg?url";
+import sandwich from "@images/sandwich.png?url";
+import pipeline from "@images/pipeline.svg?url";
+import diamonds from "@images/diamonds.svg?url";
+import checkerboard from "@images/checkerboard.svg?url";
+import whatisfp from "@images/whatisfp.svg?url";
+
+const URLS: { [name: string]: string } = {
+  pureFunction,
+  impureShell,
+  sandwich,
+  pipeline,
+  diamonds,
+  checkerboard,
+  whatisfp,
+};
+---
+
+<img width={width || "100%"} src={URLS[name]} alt={name} />

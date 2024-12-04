@@ -1,0 +1,21 @@
+---
+type: lesson
+title: Array operations
+focus: /src/arrays.js
+previews: false
+mainCommand: ['npm run test ./src/arrays.test.js', 'Running tests']
+---
+
+### Array operations without mutations 
+
+In JavaScript, many common array operations _mutate_ the array, i.e. change the array values in-place. Let's fix that by writing some functions that replace these mutating operations with functions that return a new array instead of modifying the existing one.
+
+Complete the `push`, `update`, and `pop` functions in `src/arrays.js` to get the same expected output without mutation. Feel free to use _non_-mutating array methods that return a new array, e.g. `.splice` or `.concat`, but make
+sure not to use any _mutating_ methods!
+
+
+:::tip
+
+*Not sure which methods are mutating, and which return a new array? You can check the [\`Array\` documentation on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Indexed_collections#Array_methods) to make sure!*
+
+:::

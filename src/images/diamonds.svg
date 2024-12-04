@@ -1,0 +1,18 @@
+<svg id="art" style="/*border: 10px solid black; padding: 30px;*/ background-color: white" width="500" height="500" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g><rect x="0" y="0" width="100" height="100" fill="limegreen"/>
+    <g transform="translate(50) rotate(45)  ">
+    <g><rect x="0" y="0" width="70.71067811865476" height="70.71067811865476" fill="rebeccapurple"/>
+    <g transform="translate(35.35533905932738) rotate(45)  ">
+    <g><rect x="0" y="0" width="50.00000000000001" height="50.00000000000001" fill="limegreen"/>
+    <g transform="translate(25.000000000000004) rotate(45)  ">
+    <g><rect x="0" y="0" width="35.355339059327385" height="35.355339059327385" fill="rebeccapurple"/>
+    <g transform="translate(17.677669529663692) rotate(45)  ">
+    <g><rect x="0" y="0" width="25.000000000000007" height="25.000000000000007" fill="limegreen"/>
+    <g transform="translate(12.500000000000004) rotate(45)  ">
+    <rect x="0" y="0" width="17.677669529663696" height="17.677669529663696" fill="rebeccapurple"/>
+    </g></g>
+    </g></g>
+    </g></g>
+    </g></g>
+    </g></g>
+</svg>

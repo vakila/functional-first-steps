@@ -1,0 +1,24 @@
+---
+const { title, answer, explanation } = Astro.props;
+---
+
+<aside
+  class="tf-exercise mt-6 mb-4 p-4 callout callout-tip bg-tk-elements-markdown-callouts-backgroundColor text-tk-elements-markdown-callouts-textColor border-l-3 border-tk-elements-markdown-callouts-borderColor"
+>
+  <div class="flex flex-col gap-2">
+    <h4 class="font-mono">
+      <span
+        class={`h-6 inline-block text-tk-elements-markdown-callouts-iconColor i-ph-question`}
+      >
+      </span>
+      {title}
+    </h4>
+    <div class="flex-grow"><slot /></div>
+
+    <details>
+      <summary class="font-bold text-md p-2">Reveal answer</summary>
+      <p class="pl-2 font-bold">{answer}</p>
+      <p class="pl-2 mr-4 tf-explanation">{explanation}</p>
+    </details>
+  </div>
+</aside>

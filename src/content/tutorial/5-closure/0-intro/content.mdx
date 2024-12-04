@@ -1,0 +1,25 @@
+---
+type: lesson
+title: Getting closure
+editor: false
+previews: false
+terminal:
+  open: false
+  panels: []
+---
+
+import SlidesLink from '@components/SlidesLink.astro'
+
+## Getting closure <SlidesLink url="https://observablehq.com/embed/@anjana/getting-closure?cell=*" />
+
+
+:::info
+
+When a function is defined within another function, the inner function can remember things about the outer function's scope at the time it (the inner function) was defined. When such a function "remembers" values from the defining scope, we call it a _closure_ over those values. 
+
+:::
+
+
+
+
+_Fun fact: Closures are so important in FP that they inspired the name of a popular functional language, [Clojure](https://clojure.org), and its frontend counterpart [ClojureScript](https://clojurescript.org/) which compiles to JS!_

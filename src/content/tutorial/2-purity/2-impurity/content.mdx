@@ -1,0 +1,30 @@
+---
+type: lesson
+title: Managing impurity
+focus: /src/render.js
+previews: false
+mainCommand: ['npm run test src/render.test.js', 'Running test suite']
+---
+
+import Image from '@components/Image.astro';
+
+## Managing impurity
+
+
+You might be wondering: If FP doesn't let us use side effects, confining us to the safe, sterile, deterministic world of pure functions, how can we write any useful real-world programs with it?!?
+
+
+:::tip
+
+To tackle the practical challenges of FP in the real world, a common technique is to "isolate" impurities by leaving them in the outermost layer of the program, keeping the inner core purely functional.
+
+:::
+
+<Image name='impureShell' />
+
+-----
+
+
+
+
+Refactor the imperative, impure code in `src/render.js`, to separate the _impure_, side-effecting imperative code from the _pure_ inner core functionality, by completing `impureRenderApp()` and `pureGetSVG()`  functions. Make sure the tests in `src/render.test.js` are passing for your solution.

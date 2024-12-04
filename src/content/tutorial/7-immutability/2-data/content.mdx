@@ -1,0 +1,38 @@
+---
+type: lesson
+title: Immutable Data
+focus: /src/arrays.js
+previews: false
+mainCommand: ['npm run test ./src/immer.test.js', 'Running tests']
+prepareCommands: [['npm i immer', 'Installing Immer.js']]
+---
+
+## Immutable Data with Immer.js 
+
+
+Using _immutable_ aka _persistent_ data structures (note: these terms are technically slightly different, but are often used interchangeably) make writing functional, non-mutating code more efficient, by using _structural sharing_ to reuse unchanged parts of the original data structure. 
+
+Several libraries exist implementing immutable data structures in JavaScript (see links in the further reading section). [Immer](https://immerjs.github.io/immer/docs/introduction) is a popular choice, so let's take a look at how it works.
+
+### Using Immer.js
+
+Immer lets us work with the regular _mutating_ array methods just like in imperative JS, but _without_ actually changing anything in-place! Instead of calling a method on the array directly, we wrap the array operation in Immer's `produce` function, which as the name suggests will "produce" a new array. 
+
+```js
+const oldArray = [1, 2, 3];
+const newArray = produce(oldArray, draft => {
+    draft.push(4);
+});
+```
+
+The `produce` function takes in the array to manipulate, along with a callback function. Inside the callback, we can use the regular JS Array API to modify the values of the `draft` array copy, without worrying about messing up the original - Immer takes care of that for us! The `produce` function will use the callback to compute and then return ("produce") the updated `draft`. 
+
+We can also use `produce` to manipulate objects in the same way.
+
+Take a look at how `produce` is called in `immer.test.js` to get a feel for how its API works. You can also refer to the [Immer docs](https://immerjs.github.io/immer/) directly.
+
+
+
+## Immer-ize the Array operation functions
+
+In `immer.js`, re-implement the `push`, `update` and `pop` functions using `produce`. Make sure the tests in `immer.test.js` are passing.

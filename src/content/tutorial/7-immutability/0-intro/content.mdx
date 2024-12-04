@@ -1,0 +1,20 @@
+---
+type: lesson
+title: Immutable Data
+editor: false
+previews: false
+terminal:
+    panels: []
+    open: false
+---
+
+import SlidesLink from '@components/SlidesLink.astro';
+
+## Immutable Data <SlidesLink url="https://observablehq.com/embed/@anjana/immutability?cell=*"/>
+
+
+Functional programming goes hand in hand with immutability, and if you work only with immutable data there's less chance of accidental side effects!
+
+Mutable data and mutating functions/methods allow us to change things in place - meaning we have values changing over time, aka _state_ - the functional programmer's enemy. Immutable data, on the other hand, can never be changed once it has been created.
+
+With immutable data, when we need to update something we create a new, slightly different copy, rather than changing the original. This lets us avoid state and all the headaches that come with it.

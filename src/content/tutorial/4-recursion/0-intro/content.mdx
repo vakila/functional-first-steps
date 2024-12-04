@@ -1,0 +1,38 @@
+---
+type: lesson
+title: Recursive functions
+focus: /src/factorial.js
+editor: true
+previews: false
+terminal:
+  panels: ['output']
+mainCommand: ['node --watch ./src/factorial.js', 'Running script']
+prepareCommands: []
+---
+
+
+import SlidesLink from '@components/SlidesLink.astro'
+
+## Recursive functions <SlidesLink url="https://observablehq.com/embed/@anjana/staying-out-of-the-loop-with-recursion?cell=*" />
+
+:::info
+
+In functional programming, we avoid mutable state, and therefore avoid iterative loops using `for` or `while`. As an alternative to iteration, we use _recursion_ to break down the problem into smaller ones.
+
+A recursive function has two parts:
+- _base case_: condition(s) under which the function returns an output without making a recursive call  
+- _recursive case_: condition(s) under which the function calls itself to return the output
+
+:::
+
+
+### Comparing readability
+
+
+In `factorial.js` there are two versions of a function to compute the [factorial](https://en.wikipedia.org/wiki/Factorial) of a given positive integer n: one function takes an iterative approach, the other uses recursion.
+
+Take a moment to read & understand both functions. Feel free to add comments to explain what each line does, and/or try out the functions by calling them with different inputs.
+
+Which one do you find more readable? Why?
+
+Do you notice any differences in behavior or performance?
