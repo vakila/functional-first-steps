@@ -1,10 +1,10 @@
 import { ART } from './art.js'
 
-function pureGetSVG(svgContent = '') {
+export function pureGetSVG(svgContent = '') {
     // TODO
 }
 
-function impureRenderApp() {
+export function impureRenderApp() {
     // TODO
 }
 
