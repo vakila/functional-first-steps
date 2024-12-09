@@ -2,6 +2,8 @@
 
 A super fun(ctional) programming workshop by [Anjana Vakil](https://anjana.dev) for [FrontendMasters](https://frontendmasters.com/courses/functional-first-steps/)
 
+### Course site: [functional-first-steps.netlify.app](https://functional-first-steps.netlify.app)
+
 
 ## Why am I here?
 
