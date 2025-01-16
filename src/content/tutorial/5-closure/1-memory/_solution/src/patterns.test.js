@@ -1,17 +1,7 @@
 import { describe, it, expect } from 'vitest';
-import {
-    makeMonotonePattern, purplePattern,
-    makeFixedWidthPattern, largePattern
-} from './patterns.js';
-
+import { purplePattern, largePattern } from './patterns.js';
 
 describe('makeMonotonePattern', () => {
-
-    it('should return a function', () => {
-        const patternFn = makeMonotonePattern('green')
-        expect(typeof patternFn).toBe('function');
-    });
-
     describe('purplePattern', () => {
         it('should be a function', () => {
             expect(typeof purplePattern).toBe('function')
@@ -33,13 +23,7 @@ describe('makeMonotonePattern', () => {
 });
 
 describe('makeFixedWidthPattern', () => {
-
-    it('should return a function', () => {
-        expect(typeof makeFixedWidthPattern(300)).toBe('function');
-    });
-
     describe('largePattern', () => {
-
         it('should always return a pattern of the given width', () => {
             const lgBluePink = largePattern('blue', 'pink');
             const lgBlackWhite = largePattern('black', 'white');

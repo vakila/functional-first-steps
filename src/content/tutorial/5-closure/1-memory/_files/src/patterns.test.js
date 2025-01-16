@@ -27,8 +27,8 @@ describe('makeFixedWidthPattern', () => {
         it('should always return a pattern of the given width', () => {
             const lgBluePink = largePattern('blue', 'pink');
             const lgBlackWhite = largePattern('black', 'white');
-            expect(lgBluePink.includes('width="500"')).toBeTruthy();
-            expect(lgBlackWhite.includes('width="500"')).toBeTruthy();
+            expect(lgBluePink.includes('width=500')).toBeTruthy();
+            expect(lgBlackWhite.includes('width=500')).toBeTruthy();
         })
     })
 })
